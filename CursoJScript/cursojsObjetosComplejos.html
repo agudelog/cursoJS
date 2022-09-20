@@ -1,0 +1,45 @@
+<script>
+
+    var ordenesDePizzas = [
+        {
+        "tipo" : "margarita",
+        "tamaño" : "individual",
+        "precio" : 6.000,
+        "toppings" : [
+            "extra Queso",
+            "champiñones",
+            "piña"
+        ],
+        "domicilio" : true
+
+    },
+    {
+        "tipo" : "Napolitana",
+        "tamaño" : "familiar",
+        "precio" : 46.000,
+        "toppings" : [
+            "extra Queso",
+            "Tomate",
+            "jamon"
+        ],
+        "domicilio" : false
+    },
+    {
+        "tipo" : "Ranchera",
+        "tamaño" : "Social",
+        "precio" : 37.000,
+        "toppings" : [
+            "extra Queso",
+            "chorizo",
+            "maduro"
+        ],
+        "domicilio" : true 
+    }
+    ];
+
+    console.log(ordenesDePizzas[0].tipo);
+    console.log(ordenesDePizzas[1].toppings);
+    console.log(ordenesDePizzas[1]["tipo"]);
+    console.log(ordenesDePizzas[2]["tipo"]);
+
+</script>

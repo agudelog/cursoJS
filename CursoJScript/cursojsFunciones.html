@@ -1,0 +1,67 @@
+<script>
+    function mostrarMensaje(){
+        console.log("Hola Ing")
+    }
+
+    mostrarMensaje();
+
+    function sumar(a ,b){
+        var result = a + b;
+
+        console.log("EL resultado de " + a + " + " + b + " es igual a: " + result);
+
+
+    }
+    sumar(4, 7);
+    sumar(3, 6);
+    sumar(2, 9);
+
+</script>
+/*///////////////////////////////////////////////////////////*/
+<script>
+    function sumar(a, v){
+        return a + v;
+    }
+
+    console.log(sumar(4, 8));
+</script>
+/*///////////////////////////////////////////////////////////*/
+<script>
+    function sumar(g, z){
+
+        return g + z;
+
+    }
+
+    var resultado = sumar (2, 7);
+
+    console.log(resultado);
+    
+</script>
+/*///////////////////////////////////////////////////////////*/
+
+<script>
+    function crearCadena(lenguajeProgramacion){
+        return "Estoy aprendiendo " + lenguajeProgramacion;
+    }
+
+    var miMeta = crearCadena("javaScript");
+
+    console.log(miMeta)
+</script>
+
+<script>
+    function proximoEnFila(arreglo, elemento){
+        arreglo.push(elemento); //agrega al final del arreglo
+        return arreglo.shift();  //remueve el primer elemento
+
+    }
+
+    var myArreglo = [1, 2, 3, 4, 5];
+
+    console.log("Antes : " + JSON.stringify(myArreglo)); //Muestra el arreglo
+
+    console.log(proximoEnFila(myArreglo, 6)); //returna el arreglo, agregando el valor 6
+
+    console.log("Despues : " + JSON.stringify(myArreglo)); //se visualiza el arreglo despues del cambio
+</script>

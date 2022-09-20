@@ -1,0 +1,26 @@
+
+<script>
+var myReceta = {
+    "descripcion" : "mi postre favorito",
+    "costo" : 14000,
+    "ingredientes" : {
+        "masa" : {
+            "harina" : "100grs",
+            "sal" : "1 cucharada",
+            "agua" : "1 tasa"
+        },
+        "cobertura":{
+            "azucar" : "120grs",
+            "chocolate" : "4 cucharadas",
+            "mantequilla" : "200grs"
+        }
+    }
+};
+
+console.log(myReceta.ingredientes.masa.harina);
+console.log(myReceta.ingredientes.masa["harina"]);
+console.log(myReceta.ingredientes.masa["agua"]);
+console.log(myReceta.ingredientes.cobertura.azucar);
+console.log(myReceta.ingredientes["cobertura"].azucar);
+
+</script>

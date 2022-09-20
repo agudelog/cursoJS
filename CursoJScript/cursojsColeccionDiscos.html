@@ -1,0 +1,64 @@
+<script>
+    
+    var coleccionDiscos = {
+        7853 : {
+            tituloAlbum : "la Fania",
+            artista : "la fania",
+            canciones : ["el raton", "la salsita", "el romantico"]
+        },
+        5437 : {
+            tituloAlbum : "Jerusalen",
+            artista : "Paul Willburg",
+            canciones : ["El que ama mi alma","Kadosh", "El lugar santisimo"] 
+        },
+        8234 : {
+            tituloAlbum : "Israel",
+            artista : "joshua Aaron",
+            canciones : ["cover the sea", "Salvation is your name","Blessing"]
+        },
+        7527 : {
+            tituloAlbum : "Yeshua"
+        }
+    };
+    
+    function actualizarDiscos(discos, id, propiedad, valor){
+
+        //Si  "Valor" es una cadena vacia, elimina la propiedad del album correspondiente
+       
+        // Si "propiedad" es igual a la cadena de caracteres "canciones" pero el album no tiene
+        // una propiedad llamada "canciones", crea un arreglo vacio y agrega "valor" a ese arreglo
+
+        // Si "propiedad" es igual a la cadena de caracteres "canciones" y "valor" no es una cadena 
+        // vacia, agrega "valor" al final del arreglo de canciones del album correspondiente
+
+        // Si "valor" no es una cadena vacia y "propiedad" no es igual a "canciones", asigna el valor
+        // a la propiedad. Si la propiedad no existe, debes crearla y asignar este valor.
+
+        if(valor === ""){
+            
+            delete discos[id][propiedad];
+        
+        }else if(propiedad === "canciones"){
+            
+            discos[id][propiedad] = discos[id][propiedad] || [];
+            discos[id][propiedad].push(valor);
+        
+        }else{
+
+            discos[id][propiedad] = valor;
+
+        }
+    }
+
+    console.log(coleccionDiscos[7527].tituloAlbum);
+    console.log(coleccionDiscos[7527].canciones);
+    console.log(coleccionDiscos[7527].artista);
+
+    actualizarDiscos(coleccionDiscos, 7527, "canciones", "Mi Corona y Salvacion");
+    actualizarDiscos(coleccionDiscos, 7527, "artista", "ABBA");
+
+    console.log(coleccionDiscos[7527].tituloAlbum);
+    console.log(coleccionDiscos[7527].canciones);
+    console.log(coleccionDiscos[7527].artista);
+   
+</script>

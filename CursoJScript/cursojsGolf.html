@@ -1,0 +1,25 @@
+
+<script>
+    function golfChampion(par, golpes){
+        
+        if(golpes == 1){
+            console.log("Hole in One");
+        }else if(golpes <= par -2){
+            console.log("Eagle");
+        }else if(golpes == par -1 ){
+            console.log("Birdie");
+        }else if(golpes == par){
+            console.log("Par");
+        }else if(golpes == par + 1){
+            console.log("Boguey");
+        }else if(golpes == par +2){
+            console.log("Double Boguey");
+        }else if(golpe >= par + 3){
+            console.log("Go Home");
+        }else{
+            console.log("Dummys");
+        }
+    }
+
+    golfChampion(4, 2);
+</script>

@@ -1,0 +1,39 @@
+<script>
+    function buscarElementoQuimico(simbolo){
+        
+        var simbolosQuimicos = {
+            "Al" : "Aluminio",
+            "S" : "Azufre",
+            "Cl" : "Cloro",
+            "He" : "Helio",
+            "B" : "Boro",
+            "Li" : "Litio"
+        };
+        
+        return simbolosQuimicos[simbolo];
+    }
+
+    console.log(buscarElementoQuimico("Al"));
+</script>
+
+<script>
+   
+    //Verificar Propiedades
+
+ function verificarPropiedad(obj, propiety){
+     if(obj.hasOwnProperty(propiety)){
+         return "propiedad: " + obj[propiety]; 
+     }else{
+         return "El Objeto no tiene esta propiedad";
+     }
+ }
+
+ var myCuaderno = {
+     "Color" : "Blue",
+     "Origen" : "Colombia",
+     "Precio" : "2.78"
+ };
+
+ console.log(verificarPropiedad(myCuaderno, "Color"));
+
+</script>

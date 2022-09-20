@@ -1,0 +1,42 @@
+<script>
+    var mochila = {
+        "color" : "azul",
+        "tamaño" : "mediano",
+        "contenido" :[ "botella de agua", "cuaderno"]
+    };
+
+    console.log(mochila.color);
+    mochila.color = "Rojo";
+    console.log(mochila.color);
+
+
+    mochila.contenido.push("lapiz");
+    console.log(mochila.contenido);
+
+    mochila.contenido.push("Libro");
+    console.log(mochila.contenido);
+</script>
+
+
+// Agregar propiedades
+
+<script>
+    var curso = {
+        "titulo" : "Aprende Java Script desde cero",
+        "idioma" : "english",
+        "duracion" : 30
+    };
+
+    curso.vistas = 57;
+    curso["temas"] = 8;
+
+    console.log(curso);
+    console.log("Las vistas actuales son " + curso.vistas);
+    console.log("Los temas actuales son " + curso.temas);
+    console.log(curso);
+
+    delete curso.duracion;
+
+    console.log(curso);
+
+</script>

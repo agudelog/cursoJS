@@ -1,0 +1,29 @@
+<script>
+
+//Arreglos anidados, son parte de un objeto y ese objeto es parte de otro arreglo
+    var misPlantas = [
+
+        {
+            tipo : "flores",
+            lista : [
+                "rosas",
+                "tulipanes",
+                "dientes de leon"
+            ]
+        },
+        {
+            tipo: "arboles",
+            lista: [
+                "abeto",
+                "pino",
+                "abedul"
+            ]
+        }
+    ];
+
+        var primeraFlor = misPlantas[0].lista[0];
+        var primerArbol = misPlantas[1].lista[1];
+
+    console.log(primeraFlor);
+    console.log(primerArbol);
+</script>
